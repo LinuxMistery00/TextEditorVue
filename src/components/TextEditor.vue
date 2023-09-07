@@ -18,7 +18,6 @@
 .TextEditor textarea {
   margin-bottom: 10px;
   border: 0;
-  border-radius: 1.5vh;
   background-color: #212223;
   color: #f1f2f3;
   height: 30vh;
@@ -44,13 +43,17 @@
   width: 35vh;
 }
 }
+
+textarea:focus {
+    outline: none;
+}
 </style>
 
 <script>
 export default {
   data() {
     return {
-      fileContent: 'Edit this text...',
+
     };
   },
   methods: {
